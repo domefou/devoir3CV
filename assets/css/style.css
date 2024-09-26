@@ -1,0 +1,10 @@
+/*base de couleur*/
+b{
+color:#17abb3 ,#333333,#e3e3e3,#f5f5f5,#ffffff }
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: "Raleway";
+    src: url(../google-fonts/Raleway/static/Raleway-Regular.ttf);
+    src: url(../google-fonts/Raleway/static/Raleway-Bold.ttf);
+    src: url(../google-fonts/Raleway/static/Raleway-Italic.ttf);}
+
