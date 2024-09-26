@@ -8,3 +8,98 @@ color:#17abb3 ,#333333,#e3e3e3,#f5f5f5,#ffffff }
     src: url(../google-fonts/Raleway/static/Raleway-Bold.ttf);
     src: url(../google-fonts/Raleway/static/Raleway-Italic.ttf);}
 
+/*
+.competences>ul:nth-child(5n+1)>li{
+    color: blue;
+}
+.competences>ul:nth-child(5n+3)>li{
+    color: blue;
+}
+    */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 1160px;
+    margin: auto;
+}
+header{
+    display: flex;
+}
+header,footer{
+    background-color: #17abb3;
+    color: #ffffff;
+}
+/*header*/
+.img{
+    width: 50%;
+    height: 150px;
+    background-color: red;
+}
+.presentation{
+    width: 50%;
+}
+.presentation>div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    margin: auto;
+}
+.presentation>div>p{
+    display: inline-block;
+    width: 80px;
+}
+.presentation>div>a{
+    display: block;
+    width: 80px;
+    color: #f5f5f5;
+    text-decoration: none;
+}
+h1,h2{
+    text-align: center;
+}
+/*section*/
+main{
+    display:flex;
+    width: 100%;
+}
+h3{
+    color: #17abb3;
+    margin: 15px 0 15px;
+}
+.competences{
+    box-sizing: border-box;
+    width: 25%;
+    padding: 25px;
+    background-color: #e3e3e3;
+    
+}
+.competences>ul{
+    list-style-position: inside;
+}
+.competences>ul:nth-child(0n+2)>li,
+.competences>ul:nth-child(0n+4)>li{
+    list-style-type: none;
+}
+.competences>ul:nth-child(0n+2)>li>span::after{
+    content:"\002605 \002606";
+    
+
+
+}
+
+
+.competences>ul:nth-child(5n+1)>li,
+.competences>ul:nth-child(7n+1)>li{
+    list-style-type: square;
+    color: #17abb3;
+}
+.black{
+    color: #333333;
+}
+.experience{
+    width: 75%;
+}
+
+
