@@ -16,34 +16,34 @@
         <div class="presentation">
             <h1>John DOES</h1>
             <h2>Développeur Web et Web mobile</h2>
-            <div>
-                <a href="mailto:ledev85@gmail.com" target="_blank">Mail</a>
-                <a href="https://maps.app.goo.gl/XefNxDqe7hjc9dfSA" target="_blank">Adresse</a>
-            </div>
-            <div>
-                <a href="tel:0324541827" target="_blank">telephone</a>
-                <p>Permi B</p>
-            </div>
+            <nav>
+                <ul>
+                    <li><a href="mailto:ledev85@gmail.com" target="_blank">Mail</a></li>
+                    <li><a href="https://maps.app.goo.gl/XefNxDqe7hjc9dfSA" target="_blank">Adresse</a></li>
+                    <li><a href="tel:0324541827" target="_blank">Telephone</a></li>
+                    <li><p>Permi B</p></li>
+                </ul>
+            </nav>
         </div>
 
     </header>
     <main>
         <section class="competences">
-            <h3>Compétences</h3>
+            <h2>Compétences</h2>
             <ul>
                 <!--"span" pour étoile de niveau de compétence-->
-                <li><span>HTML</span></li>
-                <li><span>CSS</span></li>
-                <li><span>Javascript</span></li>
-                <li><span>PHP</span></li>
+                <li>HTML<span class="stars-html"></span></li>
+                <li>CSS<span class="stars-css"></span></li>
+                <li>Javascript<span class="stars-javascript"></span></li>
+                <li>PHP<span class="stars-php"></span></li>
             </ul>
-            <h3>Langues</h3>
+            <h2>Langues</h2>
             <ul>
-                <li>Français "after:" Langue maternelle</li>
-                <li>Anglais "after:" Connaissance</li>
-                <li>Espagnol "after:" Notion</li>
+                <li>Français <span>Langue maternelle</span></li>
+                <li>Anglais <span>Connaissance</span></li>
+                <li>Espagnol <span> Notions</span></li>
             </ul>
-            <h3>Qualités</h3>
+            <h2>Qualités</h2>
             <ul>
                 <!--puce type square-->
                 <li><span class="black">Esprit d'équipe</span></li>
@@ -51,7 +51,7 @@
                 <li><span class="black">Organisation</span></li>
                 <li><span class="black">Créativité</span></li>
             </ul>
-            <h3>Centres d'interet</h3>
+            <h2>Centres d'interet</h2>
             <ul>
                 <!--puce type square-->
                 <li><span class="black">Football en club</span></li>
@@ -62,44 +62,81 @@
 
         </section>
         <section class="experience">
-            <h3>Profil</h3>
+            <h2>Profil</h2>
             <p>Actuellement en formation professionnelle Developpeur Web et Web mobile au Centre Européen de Formation,
                 dynamique et ayant un attrait particulier pour les casse-têtes,j'aimerais mettre a profit mes nouvelles capacitées récement acquis au seins de votre société. 
                 Volontaire et autonome je me distingue par mon engagement au service du collectif et mon gout d'apprendre. 
                 Grace a mon esprit professionnel je saurais etre un atout dans les divers projet que vous pourrez me confier.
             </p>
-            <h3>Formations</h3>
-            <p>Titre Professionnel DWWM
-                <time datetime="2025-07-31"> fin le :31/07/25</time>
-                <span>Centre Européen de Formation</span>
-            </p>
-            <p>CQP Cuisine et Service
-                <time datetime="2017-04-01"> fin le :01/04/2017</time>
-                <span>LP Libergier - REIMS</span>
-            </p>
-            <p>CQP Forgeron
-                <time datetime="2015-04-01"> fin le :01/04/2015</time>
-                <span>Pole emploi - Charleville-mézières</span>
-            </p>
-            <h3>Stages</h3>
-            <p>Gestionnaire de paye
-                <time datetime="2025-02-01"> fin le :01/02/2022</time>
-            </p>
-            <p>devloppeur web
-                <time datetime="2025-04-22"> fin le :22/04/2025</time>
-            </p>
-            <h3>Expérience professionnelle</h3>
-            <p>Gérant foodtruck saisonnier
-                <time datetime="2023-09-31"> fin le :31/09/2023</time>
-                <span>Les glaces d'émilien - Les Sables d'Olonne</span>
-            </p>
-            <p>Résponsable traiteur
-                <time datetime="2022-05-05"> fin le :05/05/2022</time>
-                <span>SETACAM - Les Sables d'Olonne</span>
-            </p>
-            <p>Cuisinier
-                <time datetime="2020-09-31"> fin le :31/09/2020</time>
-            <span>Les Jardins de l'Atlantique - Talmont-st-Hilaire</span></p>
+            <h2>Formations</h2>
+            <div class="hover">
+                <p>
+                    <span class="bold">Titre Professionnel DWWM</span>
+                    <time datetime="2025-07-31"> fin le :31/07/25</time>
+                </p>
+                <p>
+                    <span class="italic">Centre Européen de Formation</span>
+                </p>
+            </div>
+            <div class="hover">
+                <p>
+                    <span class="bold">CQP Cuisine et Service</span>
+                    <time datetime="2017-04-01"> fin le :01/04/2017</time>
+                </p>
+                <p>
+                    <span class="italic">LP Libergier - REIMS</span>
+                </p>
+            </div>
+            <div class="hover">
+                <p>
+                    <span class="bold">CQP Forgeron</span>
+                    <time datetime="2015-04-01"> fin le :01/04/2015</time>
+                </p>
+                <p>
+                    <span class="italic">Pole emploi - Charleville-mézières</span>
+                </p>
+            </div>
+            <h2>Stages</h2>
+            <div class="hover">
+                <p>
+                    <span class="bold">Gestionnaire de paye</span>
+                    <time datetime="2025-02-01"> fin le :01/02/2022</time>
+                </p>
+            </div>
+            <div class="hover">
+                <p>
+                    <span class="bold">Devloppeur web</span>
+                    <time datetime="2025-04-22"> fin le :22/04/2025</time>
+                </p>
+            </div>
+            <h2>Expérience professionnelle</h2>
+            <div class="hover">
+                <p>
+                    <span class="bold">Gérant foodtruck saisonnier</span>
+                    <time datetime="2023-09-31"> fin le :31/09/2023</time>
+                </p>
+                <p>
+                    <span class="italic">Les glaces d'émilien - Les Sables d'Olonne</span>
+                </p>
+            </div>
+            <div class="hover">
+                <p>
+                    <span class="bold">Résponsable traiteur</span>
+                    <time datetime="2022-05-05"> fin le :05/05/2022</time>
+                </p>
+                <p>
+                    <span class="italic">SETACAM - Les Sables d'Olonne</span>
+                </p>
+            </div>
+            <div class="hover">
+                    <p>
+                        <span class="bold">Cuisinier</span>
+                        <time datetime="2020-09-31"> fin le :31/09/2020</time>
+                    </p>
+                    <p>
+                        <span class="italic">Les Jardins de l'Atlantique - Talmont-st-Hilaire</span>
+                    </p>
+            </div>
         </section>
     </main>
     <footer>

@@ -1,21 +1,15 @@
 /*base de couleur*/
 b{
 color:#17abb3 ,#333333,#e3e3e3,#f5f5f5,#ffffff }
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 @font-face {
     font-family: "Raleway";
-    src: url(../google-fonts/Raleway/static/Raleway-Regular.ttf);
-    src: url(../google-fonts/Raleway/static/Raleway-Bold.ttf);
-    src: url(../google-fonts/Raleway/static/Raleway-Italic.ttf);}
+    src: url(../fonts/Raleway-Italic-VariableFont_wght.woff);
+    src: url(../fonts/Raleway-VariableFont_wght.woff);
+    src: url(../fonts/Raleway-VariableFont_wght.ttf) format(truetype);
+    src: url(../fonts/Raleway-Italic-VariableFont_wght.ttf) format(truetype);
+}
 
-/*
-.competences>ul:nth-child(5n+1)>li{
-    color: blue;
-}
-.competences>ul:nth-child(5n+3)>li{
-    color: blue;
-}
-    */
 *{
     margin: 0;
     padding: 0;
@@ -24,14 +18,17 @@ body{
     width: 1160px;
     margin: auto;
 }
+
+/* header */
+
 header{
     display: flex;
-}
-header,footer{
     background-color: #17abb3;
     color: #ffffff;
 }
-/*header*/
+h1{
+    text-align: center;
+}
 .img{
     width: 50%;
     height: 150px;
@@ -40,66 +37,173 @@ header,footer{
 .presentation{
     width: 50%;
 }
-.presentation>div{
+    /*navbar*/
+.presentation nav{
     display: flex;
     justify-content: space-evenly;
     width: 60%;
     margin: auto;
 }
-.presentation>div>p{
+.presentation ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 40px;
+    width: 200px;
+}
+.presentation li{
+    width: 80px;
+    list-style-type: none;
+    list-style-position: inside;
+
+}
+.presentation p{
     display: inline-block;
     width: 80px;
+    color: #ffffff;
 }
-.presentation>div>a{
-    display: block;
-    width: 80px;
-    color: #f5f5f5;
+.presentation a{
+    font-family: "Raleway";
     text-decoration: none;
+    color: #ffffff;
 }
-h1,h2{
-    text-align: center;
-}
-/*section*/
+
+
+/* main */
 main{
     display:flex;
     width: 100%;
 }
-h3{
-    color: #17abb3;
-    margin: 15px 0 15px;
+p,li{
+    font-family: "Raleway";
+    color:#333333;
 }
+h1,h2,h3{
+    font-family: "Lato",sans-serif;
+}
+header h2{
+    text-align: center;
+}
+    /*section competences*/
 .competences{
     box-sizing: border-box;
     width: 25%;
-    padding: 25px;
-    background-color: #e3e3e3;
-    
+    padding: 35px;
+    background-color: #f5f5f5;
 }
-.competences>ul{
-    list-style-position: inside;
+section h2{
+    box-sizing: border-box;
+    height: 2em;
+    margin: 20px 0 20px;
+    border-bottom: 2px solid #e3e3e3;
+    color: #17abb3;
 }
-.competences>ul:nth-child(0n+2)>li,
-.competences>ul:nth-child(0n+4)>li{
+        /*liste competences et langues*/
+
+
+.competences :nth-child(0n+2) li,
+.competences :nth-child(0n+4) li{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid green;
     list-style-type: none;
+    align-items: center;
+    font-weight: 600;
 }
-.competences>ul:nth-child(0n+2)>li>span::after{
-    content:"\002605 \002606";
-    
-
-
+.stars-html,
+.stars-css,
+.stars-javascript,
+.stars-php{
+    display: flex;
+    align-self: center;
 }
 
-
-.competences>ul:nth-child(5n+1)>li,
-.competences>ul:nth-child(7n+1)>li{
+        /* todo :ajouter les autres etoiles de notation*/
+.stars-html::after,
+.stars-css::after,
+.stars-javascript::after,
+.stars-php::after{
+    content: "\002606 \002606 \002606 \002606 \002606";
+    box-sizing: border-box;
+    color: #17abb3;
+    border: 2px solid black;
+}
+.competences :nth-child(0n+4) li span{
+    display: block;
+    box-sizing: border-box;
+    align-self: center;
+    color: #333333;
+    border: 2px solid black;
+    font-weight: initial;
+}
+        /*liste qualités et centre d'interet*/
+.competences :nth-child(5n+1) li,
+.competences :nth-child(5n+3) li{
     list-style-type: square;
+    list-style-position: inside;
     color: #17abb3;
 }
 .black{
     color: #333333;
 }
+
+    /*section experience*/
 .experience{
     width: 75%;
+    box-sizing: border-box;
+    padding: 35px;
+
 }
+.experience>p:first-of-type{
+    text-indent: 1.5em;
+    text-align: justify;
+}
+.experience p{
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.3em;
+}
+.bold{
+    font-weight: bold;
+}
+.italic{
+    font-style: italic;
+}
+time{
+    display: inline-block;
+    text-align: end;
+    width: 150px;
+    font-weight: 400;
+    color: #17abb3;
+}
+.hover{
+    box-sizing: border-box;
+    align-content: center;
+    margin: 20px 0 20px;
+    padding-right: 10px;
+    height: 3em;
+    
+}
+.hover:hover{
+    padding-left: 10px;
+    border-left: 5px solid #17abb3;
+    background-color: #e3e3e3;
+}
+
+/* footer */
+
+footer{
+    background-color: #17abb3;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
 
 
