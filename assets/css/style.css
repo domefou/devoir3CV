@@ -40,32 +40,46 @@ h1{
     /*navbar*/
 .presentation nav{
     display: flex;
-    justify-content: space-evenly;
-    width: 60%;
+    justify-content:space-around;
     margin: auto;
+    width: 60%;
 }
 .presentation ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     height: 40px;
-    width: 200px;
+    width: 250px;
 }
 .presentation li{
-    width: 80px;
+    display: flex;
+    align-items: center;
     list-style-type: none;
     list-style-position: inside;
+    width: 105px;
+    height: 2em;
 
 }
 .presentation p{
     display: inline-block;
-    width: 80px;
+    align-content: center;
+    width: 105px;
+    height: 2em;
     color: #ffffff;
 }
 .presentation a{
     font-family: "Raleway";
     text-decoration: none;
     color: #ffffff;
+}
+.presentation a:hover{
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+nav img{
+    width: 1em;
+    filter: invert(100%);
+    margin: 0 5px
 }
 
 
@@ -100,7 +114,7 @@ section h2{
 }
         /*liste competences et langues*/
 
-
+/* essayer nth-type()*/
 .competences :nth-child(0n+2) li,
 .competences :nth-child(0n+4) li{
     display: flex;
@@ -112,6 +126,8 @@ section h2{
     align-items: center;
     font-weight: 600;
 }
+
+/*utiliser un selecteur multiple*/
 .stars-html,
 .stars-css,
 .stars-javascript,
@@ -120,16 +136,35 @@ section h2{
     align-self: center;
 }
 
-        /* todo :ajouter les autres etoiles de notation*/
-.stars-html::after,
-.stars-css::after,
-.stars-javascript::after,
+        /* liste competence*/
+.stars-html::after{
+    content: "\002605 \002605 \002605 \002605 \002606";
+    box-sizing: border-box;
+    color: #17abb3;
+    border: 2px solid black;
+}
+.stars-css::after{
+    content: "\002605 \002605 \002605 \002605 \002606";
+    box-sizing: border-box;
+    color: #17abb3;
+    border: 2px solid black;
+}
+
+.stars-javascript::after{
+    content: "\002605 \002606 \002606 \002606 \002606";
+    box-sizing: border-box;
+    color: #17abb3;
+    border: 2px solid black;
+}
 .stars-php::after{
     content: "\002606 \002606 \002606 \002606 \002606";
     box-sizing: border-box;
     color: #17abb3;
     border: 2px solid black;
 }
+
+
+        /*liste language*/
 .competences :nth-child(0n+4) li span{
     display: block;
     box-sizing: border-box;
@@ -171,7 +206,7 @@ section h2{
 .italic{
     font-style: italic;
 }
-time{
+.experience time{
     display: inline-block;
     text-align: end;
     width: 150px;
@@ -182,21 +217,45 @@ time{
     box-sizing: border-box;
     align-content: center;
     margin: 20px 0 20px;
-    padding-right: 10px;
+    padding: 0 10px;
     height: 3em;
     
 }
 .hover:hover{
-    padding-left: 10px;
+    margin-left: -5px;
     border-left: 5px solid #17abb3;
     background-color: #e3e3e3;
+
 }
 
 /* footer */
 
 footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
     background-color: #17abb3;
     color: #ffffff;
+    
+}
+.social_network{
+    width: 130px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.social-network img{
+    filter: invert(100%);
+    width: 30px;
+}
+.social-network img:hover{
+    opacity: 0.7;
+
+}
+footer div{
+    display: block;
+
 }
 
 
