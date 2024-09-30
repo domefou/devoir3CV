@@ -3,9 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Voici la présentation de mon CV personnalisé,realisé a partir de HTML et de CSS.Devoir de bilan demandé par le Centre Européen de Formation CEF">
+    <link rel="icon" type="image/vnd.icon" href="./assets/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Devoir 3 CV HTML CSS Centre Européen de Formation</title>
 </head>
 <body>
+    <header>
+        <div class="img_presentation">
+            <a href="./assets/img/photo-cv-noir-et-blanc-redimentionné.jpg" target="_blank">
+                    <img src="./assets/img/photo-cv-noir-et-blanc-redimentionné.jpg" alt="photo de profil noir et blanc">
+            </a>
+        </div>
+        <div class="presentation">
+            <h1>John DOES</h1>
+            <h2>Développeur Web et Web mobile</h2>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="mailto:ledev85@gmail.com" target="_blank">
+                        <img src="./assets/img/envelope.png" alt="icone enveloppe lien email">Mail</a></li>
+                    <li>
+                        <a href="https://maps.app.goo.gl/XefNxDqe7hjc9dfSA" target="_blank">
+                        <img src="./assets/img/home.png" alt="icone maison avec lien adresse postale">Adresse</a></li>
+                    <li>
+                        <a href="tel:0324541827" target="_blank">
+                        <img src="./assets/img/telephone-handle-silhouette.png" alt="icone telephone avec lien numéro de téléphone">Telephone</a></li>
+                    <li>
+                        <p>
+                        <img src="./assets/img/car.png" alt="icone voiture">Permi B</p></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <section class="competences">
+            <h2>Compétences</h2>
+            <ul>
+                <!--"span" pour étoile de niveau de compétence-->
+                <li>HTML<span class="stars-html"></span></li>
+                <li>CSS<span class="stars-css"></span></li>
+                <li>Javascript<span class="stars-javascript"></span></li>
+                <li>PHP<span class="stars-php"></span></li>
+            </ul>
+            <h2>Langues</h2>
+            <ul>
+                <li>Français <span>Langue maternelle</span></li>
+                <li>Anglais <span>Connaissance</span></li>
+                <li>Espagnol <span> Notions</span></li>
+            </ul>
+            <h2>Qualités</h2>
+            <ul>
+                <!--puce type square-->
+                <li><span class="black">Esprit d'équipe</span></li>
+                <li><span class="black">Autonome</span></li>
+                <li><span class="black">Organisation</span></li>
+                <li><span class="black">Créativité</span></li>
+            </ul>
+            <h2>Centres d'interet</h2>
+            <ul>
+                <!--puce type square-->
+                <li><span class="black">Football en club</span></li>
+                <li><span class="black">passionné de Jeux vidéo</span></li>
+                <li><span class="black">Casse-têtes</span></li>
+            </ul>
+
+
+        </section>
+        <section class="experience">
+            <h2>Profil</h2>
+            <p>Actuellement en formation professionnelle Developpeur Web et Web mobile au Centre Européen de Formation,
+                dynamique et ayant un attrait particulier pour les casse-têtes, j'aimerais mettre a profit mes nouvelles capacitées récement acquis au seins de votre société. 
+                Volontaire et autonome je me distingue par mon engagement au service du collectif et mon gout d'apprendre. 
+                Grace a mon esprit professionnel je saurais être un atout dans les divers projets que vous pourrez me confier.
+            </p>
+            <h2>Formations</h2>
+            <div class="background">
+                <p>
+                    <span class="bold">Titre Professionnel DWWM</span>
+                    <time datetime="2024-07-31">31/07/24 - 31/07/25</time>
+                </p>
+                <p>
+                    <span class="italic">Centre Européen de Formation</span>
+                </p>
+            </div>
+            <div class="background">
+                <p>
+                    <span class="bold">CQP Cuisine et Service</span>
+                    <time datetime="2017-04-01"> 01/09/16 - 01/04/17</time>
+                </p>
+                <p>
+                    <span class="italic">LP Libergier - REIMS</span>
+                </p>
+            </div>
+            <div class="background">
+                <p>
+                    <span class="bold">CQP Forgeron</span>
+                    <time datetime="2015-04-01">20/01/15 - 01/04/15</time>
+                </p>
+                <p>
+                    <span class="italic">Pole emploi - Charleville-mézières</span>
+                </p>
+            </div>
+            <h2>Stages</h2>
+            <div class="background">
+                <p>
+                    <span class="bold">developpeur front end</span>
+                    <time datetime="2025-02-01">a venir : 01/02/22</time>
+                </p>
+            </div>
+            <div class="background">
+                <p>
+                    <span class="bold">Devloppeur web et web mobile</span>
+                    <time datetime="2025-04-22">a venir : 22/04/25</time>
+                </p>
+            </div>
+            <h2>Expérience professionnelle</h2>
+            <div class="background">
+                <p>
+                    <span class="bold">Gérant foodtruck saisonnier</span>
+                    <time datetime="2023-09-30">01/04/23 - 30/09/23</time>
+                </p>
+                <p>
+                    <span class="italic">Les glaces d'émilien - Les Sables d'Olonne</span>
+                </p>
+            </div>
+            <div class="background">
+                <p>
+                    <span class="bold">Résponsable traiteur</span>
+                    <time datetime="2022-05-05">01/10/20 - 05/05/22</time>
+                </p>
+                <p>
+                    <span class="italic">SETACAM - Les Sables d'Olonne</span>
+                </p>
+            </div>
+            <div class="background">
+                    <p>
+                        <span class="bold">Cuisinier</span>
+                        <time datetime="2020-09-20">01/09/17 - 31/09/20</time>
+                    </p>
+                    <p>
+                        <span class="italic">Les Jardins de l'Atlantique - Talmont-st-Hilaire</span>
+                    </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+    <div class="social_network">
+        <a class="social-network" target="_blank" href="https://www.linkedin.com/pulse/topics/home/?trk=guest_homepage-basic_guest_nav_menu_articles">
+            <img src="./assets/img/linkedin-logo.png" alt="logo avec lien linkedin"></a>
+        <a class="social-network" target="_blank" href="https://github.com/dashboard">
+            <img src="./assets/img/github.png" alt="logo avec lien Github"></a>
+        <a class="social-network" target="_blank" href="https://www.instagram.com/sem/campaign/emailsignup/?campaign_id=13560899667&extra_1=s%7Cc%7C547348932178%7Ce%7Cinstagram%20%27%7C&placement=&creative=547348932178&keyword=instagram%20%27&partner_id=googlesem&extra_2=campaignid%3D13560899667%26adgroupid%3D126262412054%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-1321618851291%26loc_physical_ms%3D9056407%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gad_source=1&gclid=Cj0KCQjwmOm3BhC8ARIsAOSbapU4Z4QJ4HChYFJ1fiMG11vTBHqsRvV8QD9G6VBOCSZP3O8jB7B7L2oaAlMCEALw_wcB">
+            <img src="./assets/img/instagram.png" alt="logo avec lien Instagram"></a>
+    </div>
+    <small>mis à jour le <time datetime="2024-09-30">30/09/2024</time></small>
+
+    </footer>
     
 </body>
 </html>
